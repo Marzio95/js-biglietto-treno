@@ -4,13 +4,13 @@ let age = prompt('Anni passeggero:');
 const prezzoKm = 0.21;
 
 let molt = km * prezzoKm;
-document.getElementById('my_output').innerHTML = molt
+document.getElementById('prezzo_nosconto').innerHTML = molt
 
 
 if (age < 18) {
-    molt - (molt / 100 * 20)
+    document.getElementById('prezzo_nosconto').innerHTML = molt - (molt / 100 * 20)
 } else if (age > 65){
-    molt - (molt / 100 * 40)
+    document.getElementById('prezzo_nosconto').innerHTML = molt - (molt / 100 * 40)
 } else {
-    molt 
+    document.getElementById('prezzo_nosconto').innerHTML = molt 
 }
