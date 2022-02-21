@@ -11,10 +11,10 @@ const scontoGiovani = 20;
 document.getElementById('sconto_inferiore18anni').innerHTML = scontoGiovani;
 
 const scontoAnziani = 40;
-document.getElementById('sconto_superiore65anni').innerHTML = scontoAnziani
+document.getElementById('sconto_superiore65anni').innerHTML = scontoAnziani;
 
-let molt = km * prezzoKm;
-document.getElementById('prezzo_nosconto').innerHTML = molt;
+let molt = Math.round ((km * prezzoKm));
+
 
 
 if (age < 18) {
